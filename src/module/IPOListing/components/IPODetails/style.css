@@ -1,0 +1,39 @@
+.ipo_details{
+    padding: 1.2rem;
+    border: 2px solid #e4e5ed;
+    border-radius: 1rem;
+    @media only screen and (max-width:900px){
+        border: none;
+        padding: 0;
+    }
+}
+
+.details_ctn{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #e4e5ed;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    @media only screen and (max-width:900px){
+        justify-content: space-around;
+    }
+    .detail_div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        min-width: 25%;
+        margin-bottom: 1rem;
+        @media only screen and (max-width:900px){
+         min-width: 160px;
+        }
+        .title{
+            font-size: 14px;
+            color:#7D7782;
+        }
+        .detail_data{
+            margin: 0;
+            font-size: 16px;
+        }
+    }
+}

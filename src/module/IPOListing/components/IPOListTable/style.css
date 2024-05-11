@@ -1,0 +1,78 @@
+.ipo_listing_table{
+    width: 80vw;
+    margin: auto;
+    border: 1px solid darkgray;
+    border-radius: 12px;
+    border-collapse: collapse;
+    th{
+        padding: 1rem;
+        background: #F4F4F5;
+        text-align: left;
+        font-weight: 500;
+        color:#7D7782;
+    }
+  
+    td{
+        padding: 0.8rem;
+    }
+
+    .stock_row:not(:last-child){
+        border-bottom: 1px solid #F4F4F5;
+    }
+
+    .stock_row{
+        cursor: pointer;
+        &:hover{
+            background-color: lightyellow;
+        }
+    }
+
+    .company_date_logo{
+        display: flex;
+        align-items: center;
+        .company_logo{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            border:0.5px solid lightgray;
+            background: lightblue;
+        }
+    }
+
+    .company_date{
+        display: flex;
+        flex-direction: column;
+        padding-left: 16px;
+        .company_name{
+            font-weight: 600;
+            font-size: 18px;
+            margin: 0;
+        }
+        .issue_date{
+            color: #807D89;
+        }
+    }
+    .issue_size{
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+    }
+    .issue_date{
+        color: #807D89;
+    }
+
+    .min_inv{
+        font-weight: 600;
+        font-size: 18px; 
+        text-align: center;
+    }
+
+    .size_lots_ctn{
+        display: flex;
+        flex-direction: column; 
+        margin: auto;
+        width: fit-content;
+    }
+}
