@@ -4,7 +4,7 @@ import './style.css';
 
 const IPOListTable = ({ handleRowClick }) => {
   return (
-    <div>
+    <div style={{marginTop:"2rem"}}>
       <h2 className="list_heading">Upcoming IPO List </h2>
       <table className="ipo_listing_table">
         <tr>
