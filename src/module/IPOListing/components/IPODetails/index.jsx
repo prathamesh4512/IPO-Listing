@@ -47,7 +47,7 @@ const IpoDetails = ({stockData}) => {
         <h5 className="detail_data">&#8377;{stockData?.listedPrice}</h5>
       </div>}
 
-      <div className="detail_div">
+      {stockData?.listedPrice && <div className="detail_div">
         <span className="title">Listing gains</span>
         <h5 className="detail_data">
           &#8377;{stockData?.listingGain || 0} (
@@ -59,7 +59,7 @@ const IpoDetails = ({stockData}) => {
           </span>
           )
         </h5>
-      </div>
+      </div>}
     </div>
   </div>
   )

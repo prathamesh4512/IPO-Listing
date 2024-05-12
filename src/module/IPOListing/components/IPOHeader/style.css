@@ -1,0 +1,72 @@
+.top_header{
+    display: flex;
+    justify-content: space-between;
+
+    .right_side,.left_side{
+        display: flex;
+        gap:1rem;
+        align-items: center;
+        .back_button{
+            padding: 10px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid lightgray;
+            border-radius: 12px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            @media only screen and (max-width:900px){
+                display: none;
+            }
+        }
+    }
+
+ 
+
+    .logo_name{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        .company_logo{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            border:0.5px solid lightgray;
+            background: lightblue;
+        }
+
+        h2,h6{
+            margin: 0;
+        }
+
+        h6{
+            font-size: 12px;
+            font-weight: 500;
+            color: #807D89;
+        }
+
+    }
+
+    .right_side{
+        @media only screen and (max-width:900px){
+            display: none;
+        }
+        .apply_btn{
+            background: #15153C;
+            padding: 14px 30px;
+            color: white;
+            font-size: 14px;
+            border-radius: 12px;
+        }
+    }
+
+    .download{
+        height: 30px;
+        width: 30px;
+    }
+}

@@ -1,0 +1,24 @@
+.about_company{
+    padding: 1.2rem;
+    border: 2px solid #e4e5ed;
+    border-radius: 1rem;
+    .details_text{
+        margin-top: 1rem;
+    }
+
+    .company_heading{
+        display: none;
+    }
+
+    @media only screen and (max-width:900px){
+        border: none;
+        padding: 0;
+
+        .heading{
+            display: none;
+        }
+        .company_heading{
+            display: block;
+        }
+    }
+}

@@ -48,6 +48,30 @@ const IPOTimeLine = ({ timeLine }) => {
           </div>
         ))}
       </div>
+
+      <div className="mweb_progress_bar">
+      <div className="vertical_line">
+          <div
+            className="vertical_line_green"
+            style={{ height: `calc(${progressWidth()}%)` }}
+          ></div>
+        </div>
+      {Object.keys(timeLine)?.map((ele, idx) => (
+          <div key={idx} className="progress_ctn">
+            <div
+              className={`progress_icon ${progress > idx ? "done" : "pending"}`}
+            >
+              {progress > idx ? (
+                <AiOutlineCheck style={{ color: "white" }} />
+              ) : null}
+            </div>
+            <div className="label_date">
+            <h5 className="label">{LABELS[idx]}</h5>
+            <p className="event_date">{timeLine[ele]}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

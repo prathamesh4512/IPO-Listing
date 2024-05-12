@@ -5,11 +5,11 @@ import './style.css';
 const IPOListTable = ({ handleRowClick }) => {
   return (
     <div>
-      <h2 style={{ textAlign: "center" }}>Upcoming IPO List </h2>
+      <h2 className="list_heading">Upcoming IPO List </h2>
       <table className="ipo_listing_table">
         <tr>
-          <th style={{ width: "30%" }}>Company / Issue date</th>
-          <th style={{ textAlign: "center" }}>Issue size</th>
+          <th className="company_issue_date_heading">Company / Issue date</th>
+          <th className="issue_size_heading">Issue size</th>
           <th style={{ textAlign: "center" }}>Price range</th>
           <th style={{ textAlign: "center" }}>Min invest/qty</th>
         </tr>
@@ -32,7 +32,7 @@ const IPOListTable = ({ handleRowClick }) => {
                 </div>
               </td>
               <td className="issue_size">&#8377; {ele?.issueSize} Crores</td>
-              <td className="issue_size">&#8377; {ele?.priceRange}</td>
+              <td className="price_range">&#8377; {ele?.priceRange}</td>
               <td className="size_lots_ctn">
                 <span className="min_inv">
                   &#8377; {ele?.minInvestment.toLocaleString()}

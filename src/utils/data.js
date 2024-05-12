@@ -15,7 +15,7 @@ export const IPO_LIST = [
             allotment: "11 Oct 2022",
             refund : "11 Oct 2022",
             demat : "15 Oct 2022",
-            listing : "18 Oct 2024"
+            listing : "18 Oct 2022"
         },
         listedPrice:150,
         listingGain:10,
@@ -32,12 +32,15 @@ export const IPO_LIST = [
         noOfShare:80,
         dates:{
             start:"4 Oct 2022",
-            end: "7 Oct 2022",
+            end: "7 Oct 2024",
             allotment: "11 Oct 2022",
             refund : "11 Oct 2022",
             demat : "15 Oct 2022",
             listing : "18 Oct 2022"
-        }
+        },
+        listedPrice:560,
+        listingGain:70,
+        percentage:-5
     },
     {
         id:3,
@@ -49,12 +52,12 @@ export const IPO_LIST = [
         noOfLots:6,
         noOfShare:80,
         dates:{
-            start:"4 Oct 2022",
+            start:"4 Oct 2024",
             end: "7 Oct 2022",
             allotment: "11 Oct 2022",
             refund : "11 Oct 2022",
             demat : "15 Oct 2022",
-            listing : "18 Oct 2024"
+            listing : ""
         }
     },
     {
@@ -69,11 +72,14 @@ export const IPO_LIST = [
         dates:{
             start:"4 Oct 2022",
             end: "7 Oct 2022",
-            allotment: "11 Oct 2022",
+            allotment: "11 Oct 2024",
             refund : "11 Oct 2022",
             demat : "15 Oct 2022",
             listing : "18 Oct 2022"
-        }
+        },
+        listedPrice:560,
+        listingGain:70,
+        percentage:17
     },
     {
         id:5,
@@ -88,10 +94,13 @@ export const IPO_LIST = [
             start:"4 Oct 2022",
             end: "7 Oct 2022",
             allotment: "11 Oct 2022",
-            refund : "11 Oct 2022",
+            refund : "11 Oct 2024",
             demat : "15 Oct 2022",
             listing : "18 Oct 2022"
-        }
+        },
+        listedPrice:560,
+        listingGain:70,
+        percentage:-11
     },
     {
         id:6,
@@ -107,7 +116,7 @@ export const IPO_LIST = [
             end: "7 Oct 2022",
             allotment: "11 Oct 2022",
             refund : "11 Oct 2022",
-            demat : "15 Oct 2022",
+            demat : "15 Oct 2024",
             listing : ""
         }
     }

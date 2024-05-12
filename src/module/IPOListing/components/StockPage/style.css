@@ -1,6 +1,9 @@
 
 .page_wrapper{
     padding: 2rem 3rem;
+    @media only screen and (max-width:700px){
+        padding:2rem;
+    }
 }
 
 .navigation_bar{
@@ -23,89 +26,19 @@
     }
 }
 
+.stock_page_heading{
+    display: none;
+    @media only screen and (max-width:900px){
+        display: block;
+    }
+}
+
 .details_page{
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-}
-
-.top_header{
-    display: flex;
-    justify-content: space-between;
-
-    .right_side,.left_side{
-        display: flex;
-        gap:1rem;
-        align-items: center;
-        .back_button{
-            padding: 10px;
-            width: 20px;
-            height: 20px;
-            border: 1px solid lightgray;
-            border-radius: 12px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            @media only screen and (max-width:900px){
-                display: none;
-            }
-        }
-    }
-
-    .logo_name{
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-
-        .company_logo{
-            width: 50px;
-            height: 50px;
-            text-align: center;
-            line-height: 50px;
-            border-radius: 50%;
-            border:0.5px solid lightgray;
-            background: lightblue;
-        }
-
-        h2,h6{
-            margin: 0;
-        }
-
-        h6{
-            font-size: 12px;
-            font-weight: 500;
-            color: #807D89;
-        }
-
-    }
-
-    .right_side{
-        @media only screen and (max-width:900px){
-            display: none;
-        }
-        .apply_btn{
-            background: #15153C;
-            padding: 14px 30px;
-            color: white;
-            font-size: 14px;
-            border-radius: 12px;
-        }
-    }
-
-    .download{
-        height: 30px;
-        width: 30px;
-    }
-}
-
-.about_company{
-    padding: 1.2rem;
-    border: 2px solid #e4e5ed;
-    border-radius: 1rem;
-    .details_text{
-        margin-top: 1rem;
+    @media only screen and (max-width:900px){
+       gap:2rem;
     }
 }

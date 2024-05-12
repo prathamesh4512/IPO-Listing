@@ -1,3 +1,11 @@
+.list_heading{
+    text-align: center;
+    margin-bottom: 1rem;
+    @media only screen and (max-width:900px){
+        font-size: 14px;
+     }
+}
+
 .ipo_listing_table{
     width: 80vw;
     margin: auto;
@@ -10,10 +18,16 @@
         text-align: left;
         font-weight: 500;
         color:#7D7782;
+        @media only screen and (max-width:900px){
+            font-size: 12px;
+         }
     }
   
     td{
         padding: 0.8rem;
+        @media only screen and (max-width:700px){
+            padding: 5px;
+         }
     }
 
     .stock_row:not(:last-child){
@@ -27,17 +41,36 @@
         }
     }
 
+    .company_issue_date_heading{
+        width: 30%;
+        @media only screen and (max-width:700px){
+            width: 40%;
+         }
+    }
+
+    .issue_size_heading{
+        text-align: center;
+        @media only screen and (max-width:900px){
+            display: none;
+         }
+    }
+
     .company_date_logo{
         display: flex;
         align-items: center;
         .company_logo{
-            width: 50px;
-            height: 50px;
+            max-width: 50px;
+            max-height: 50px;
+            min-width: 50px;
+            min-height: 50px;
             text-align: center;
             line-height: 50px;
             border-radius: 50%;
             border:0.5px solid lightgray;
             background: lightblue;
+            @media only screen and (max-width:900px){
+               display: none;
+            }
         }
     }
 
@@ -49,15 +82,30 @@
             font-weight: 600;
             font-size: 18px;
             margin: 0;
+            @media only screen and (max-width:900px){
+                font-size: 12px;
+             }
         }
         .issue_date{
             color: #807D89;
+            @media only screen and (max-width:900px){
+                font-size: 10px;
+             }
         }
     }
-    .issue_size{
+    .issue_size,.price_range{
         font-weight: 600;
         font-size: 18px;
         text-align: center;
+        @media only screen and (max-width:900px){
+            font-size: 12px;
+         }
+    }
+
+    .issue_size{
+        @media only screen and (max-width:900px){
+            display: none;
+         }
     }
     .issue_date{
         color: #807D89;
@@ -67,6 +115,9 @@
         font-weight: 600;
         font-size: 18px; 
         text-align: center;
+        @media only screen and (max-width:900px){
+            font-size: 12px;
+         }
     }
 
     .size_lots_ctn{
@@ -74,5 +125,8 @@
         flex-direction: column; 
         margin: auto;
         width: fit-content;
+        @media only screen and (max-width:900px){
+            font-size: 10px;
+         }
     }
 }

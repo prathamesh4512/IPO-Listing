@@ -2,6 +2,10 @@
   padding: 1.2rem;
   border: 2px solid #e4e5ed;
   border-radius: 1rem;
+  @media only screen and (max-width:900px){
+    border: none;
+    padding: 0;
+}
 
   .progress_ctn {
     display: flex;
@@ -9,7 +13,7 @@
     align-items: center;
     text-align: center;
     gap: 10px;
-    max-width: 40px;
+    max-width: 30px;
   }
 
   .label {
@@ -28,18 +32,22 @@
     margin: auto;
     margin-top: 2rem;
     position: relative;
+    @media only screen and (max-width:900px){
+      display: none;
+  }
   }
 
   .horizontal_line,
   .horizontal_line_green {
-    width: 100%;
+    width: 99.5%;
     position: absolute;
     border: 0.5px solid #dddde6;
-    top: 15%;
+    top: 12px;
     z-index: -1;
   }
 
   .horizontal_line_green {
+    top:0;
     left: 0;
     border-color: #4fae55;
   }
@@ -50,8 +58,10 @@
   }
 
   .progress_icon {
-    width: 40px;
-    height: 40px;
+    max-width: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -62,5 +72,46 @@
   }
   .pending {
     background-color: #dddde6;
+  }
+
+  .mweb_progress_bar{
+    position: relative;
+  
+    flex-direction: column;
+    gap:10px;
+    margin-top: 1rem;
+    display: none;
+    @media only screen and (max-width:900px){
+      display: flex;
+  }
+    .progress_ctn{
+      display: flex;
+      flex-direction: row;
+      max-width: 300px;
+      gap:2rem;
+      align-items: flex-start;
+    }
+
+    .label_date{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .vertical_line,
+  .vertical_line_green {
+    height: 310px;
+    position: absolute;
+    border: 0.5px solid #dddde6;
+    left: 14px;
+    z-index: -1;
+  }
+
+  .vertical_line_green {
+    left: 0;
+    border-color: #4fae55;
+  }
+
+
   }
 }
